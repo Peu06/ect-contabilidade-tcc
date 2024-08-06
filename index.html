@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECT - Contabilidade</title>
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="src/images/only-logo.png">
+</head>
+
+<body class="min-h-screen">
+    <div class="mx-auto">
+        <div>
+            <!-- Barra de Navegação -->
+            <nav
+                class="bg-white dark:bg-blue-600 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+                <!-- Header  -->
+                <header
+                    class="dark:shadow-sm mb-2 dark:shadow-blue-600 text-center px-2 text-sm flex md:text-lg dark:text-white dark:bg-blue-600 text-black w-full gap-4 md:gap-12 md:flex-row mt-2 font-semibold">
+                    <div
+                        class="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-center justify-between w-full text-xs">
+                        <p>R. Padre José, N° 620 - Centro, Mogi Mirim - SP, 13800-170</p>
+                        <p>Funcionamento de Segunda a Sexta 08:00 às 17:30</p>
+                    </div>
+                </header>
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-2 xl:px-0">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ECT
+                            Contabilidade</span>
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2 text-center"><a href="#formContact">Contato</a></button>
+                        <button id="navbar-toggle" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-blue-700 dark:text-gray-100 dark:hover:bg-blue-700"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Abrir menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="hover:text-blue-900 flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-blue-500 md:dark:bg-blue-600 dark:border-gray-700">
+                            <li>
+                                <a href="#inicio"
+                                    class="block py-2 px-3 dark:text-white rounded hover:text-blue-500 hover:scale-110 duration-200 md:p-0"
+                                    aria-current="page">Início</a>
+                            </li>
+                            <li>
+                                <a href="#sobreNos"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white hover:scale-110 duration-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#especialidades"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white hover:scale-110 duration-200 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Especialidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Inicio -->
+        <div class="shadow-sm mb-2 pt-48    
+         shadow-gray-700 bg-gradient-to-l from-blue-400 to-blue-800 text-white px-6 text-left" id="inicio">
+            <div class="mx-auto max-w-7xl">
+                <div class="font-semibold text-2xl md:text-4xl mb-6 flex flex-col gap-2 text-center md:text-left">
+                    <h2 class="mt-12">Quer abrir uma empresa?</h2>
+                    <h2>Nós somos a solução!</h2>
+                </div>
+                <h5 class="mb-2 text-base md:text-xl text-center md:text-left">Ajudamos empreendedores a abrir,
+                    regularizar e organizar a sua
+                    empresa.</h5>
+                <div class="button-container" id="sobreNos">
+                    <button class="font-semibold border bg-white text-black rounded-md p-3 mt-12 mb-12"><a
+                            href="#formContact" class="no-underline">Agendar Avaliação</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- Sobre Nós -->
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl flex-1 mb-12 mt-12 px-4">
+            <div class="font-semibold">
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-blue-400 text-2xl">Sobre nós</h2>
+                    <h1 class="text-blue-700 text-3xl mb-4">Sobre a ECT Contabilidade</h1>
+                </div>
+                <div class="font-normal">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae voluptates
+                        ipsa facere quos dolorum!
+                        Officiis aliquid, temporibus fugit itaque expedita nisi quis adipisci sequi unde exercitationem
+                        at
+                        facilis nostrum cupiditate!</p>
+                    <p class="mt-4 mb-4 md:mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur
+                        repellendus magni deserunt
+                        expedita fugit, vel, pariatur animi facilis quos consequatur soluta, molestiae nihil quia
+                        architecto veniam sapiente temporibus incidunt!</p>
+                </div>
+            </div>
+            <div class="flex justify-end items-center">
+                <img src="src/images/hero-area.jpg" alt="" class="rounded-sm">
+            </div>
+        </div>
+        <!-- Especialidades -->
+        <div class="bg-gradient-to-l from-blue-400 to-blue-700 text-white px-6 text-center" id="especialidades">
+            <div class="max-w-7xl mx-auto">
+                <div class="font-semibold">
+                    <h2 class="text-3xl mb-2 pt-8">Nossas Especialidades</h2>
+                    <h2 class="text-lg">Confira abaixo as especialidades em que atuamos!</h2>
+                </div>
+                <!-- Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <!-- Abertura de Empresas -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">Abertura de Empresas</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Gestão Contábil -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">Gestão Contábil</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Gestão Financeira -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">Gestão Financeira</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Certificado Digital -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">Certificado Digital</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Recursos Humanos -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">Recursos Humanos</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- MEI -->
+                    <div class="bg-white text-blue-700 p-6 rounded-lg shadow-md flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 md:size-10">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                        </svg>
+                        <h3 class="font-semibold text-lg">MEI</h3>
+                        <p class="font-normal text-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="button-container" id="formContact">
+                    <button class="font-semibold border bg-white text-black rounded-md p-3 mt-6 mb-6"><a
+                            href="#formContact" class="no-underline">Agendar Avaliação</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- Contato -->
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl flex-1 mb-12 mt-6 md:mt-12 gap-12 px-4">
+            <div class="ml-0 md:ml-8 mt-8 md:mt-0">
+                <div class="flex flex-col gap-2 font-semibold">
+                    <h2 class="text-blue-400 text-2xl">Contato</h2>
+                    <h1 class="text-blue-700 text-3xl mb-4">Fale Conosco</h1>
+                    <div class="flex flex-col gap-2 font-normal">
+                        <p>Através deste formulário, você poderá obter o melhor atendimento personalizado, dedicado e
+                            profissional.</p>
+                        <span>Será um prazer recebê-lo em nosso escritório.</span>
+                    </div>
+                </div>
+            </div>
+            <form method="post">
+                <div class="flex flex-col mb-4">
+                    <label for="name" class="mb-2 mt-6 font-semibold">Nome:</label>
+                    <input type="text" id="name" name="name" required class="p-2 rounded border border-gray-300">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="email" class="mb-2 font-semibold">Email:</label>
+                    <input type="email" id="email" name="email" required class="p-2 rounded border border-gray-300">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="telefone" class="mb-2 font-semibold">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required maxlength="13"
+                        class="p-2 rounded border border-gray-300">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="service" class="mb-2 font-semibold">Tipo de Serviço:</label>
+                    <select id="service" name="service" required
+                        class="p-2 py-3 rounded border border-gray-300 bg-white">
+                        <option value="Abertura de Empresa">Abertura de Empresa</option>
+                        <option value="Encerramento de Empresa">Encerramento de Empresa</option>
+                        <option value="Apuração de Impostos">Apuração de Impostos</option>
+                        <option value="Folha de Pagamento">Folha de Pagamento</option>
+                        <option value="Declarações de Impostos">Declarações de Impostos</option>
+                        <option value="Receita Federal">Receita Federal</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="message" class="mb-2 font-semibold">Mensagem:</label>
+                    <textarea id="message" name="message" required
+                        class="p-2 rounded border border-gray-300 resize-none"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-max font-semibold border bg-blue-600 text-white rounded-md px-10 py-3 mt-6 mb-6">Enviar</button>
+            </form>
+        </div>
+        <footer class="bg-white dark:bg-blue-800">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="#inicio" class="flex items-center">
+                            <img src="src/images/only-logo.png" class="h-16 w-24 rounded-md me-3"
+                                alt="ECT Contabilidade Logo" />
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ECT
+                                Contabilidade</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Siga-nos
+                            </h2>
+                            <ul class="text-gray-500 dark:text-gray-300 font-medium">
+                                <li class="mb-4">
+                                    <a href=""
+                                        class="hover:underline ">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:underline">Facebook</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal
+                            </h2>
+                            <ul class="text-gray-500 dark:text-gray-300 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Política de Privacidade</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Termos e Condições</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-300">&copy; 2024 <a
+                            href="#" class="hover:underline">ECT Contabilidade</a>. Todos os
+                        direitos reservados.
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .button-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
