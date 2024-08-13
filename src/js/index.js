@@ -32,3 +32,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.getElementById('agendamentoForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const descricao = document.getElementById('service').value;
+    const telefone = document.getElementById('telefone').value;
+    const mensagem = document.getElementById('message').value;
+
+    console.log({ nome, email, descricao, telefone }); // Verifique se todos os valores estão corretos
+
+    const data = { nome, descricao, telefone, email, mensagem};
+
+    fetch('http://localhost:3000/agendamentos', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Agendamento realizado com sucesso!');
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        alert('Erro ao realizar o agendamento');
+        console.error('Error:', error);
+    });
+});
