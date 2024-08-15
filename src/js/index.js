@@ -46,7 +46,7 @@ document.getElementById('agendamentoForm').addEventListener('submit', function (
 
     const data = { nome, descricao, telefone, email, mensagem};
 
-    fetch('http://localhost:3000/agendamentos', {
+    fetch('https://ect-contabilidae-email.onrender.com/agendamentos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
