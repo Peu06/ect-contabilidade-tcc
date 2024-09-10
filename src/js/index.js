@@ -44,23 +44,27 @@ document.getElementById('agendamentoForm').addEventListener('submit', function (
 
     console.log({ nome, email, descricao, telefone }); // Verifique se todos os valores estão corretos
 
-    const data = { nome, descricao, telefone, email, mensagem};
+    const data = { nome, descricao, telefone, email, mensagem };
 
-    fetch('https://ect-contabilidae-email.onrender.com/agendamentos', {
+    fetch('http://localhost:3000/agendamentos', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Headers': 'Content-Type'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
-    .then(data => {
-        alert('Agendamento realizado com sucesso!');
-        console.log('Success:', data);
-    })
-    .catch((error) => {
-        alert('Erro ao realizar o agendamento');
-        console.error('Error:', error);
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert('Agendamento realizado com sucesso!');
+            console.log('Success:', data);
+        })
+        .catch(error => {
+            alert('Erro ao realizar o agendamento');
+            console.error('Error:', error);
+        });
 });
