@@ -205,6 +205,17 @@
                         class="p-2 rounded border border-gray-300">
                 </div>
                 <div class="flex flex-col mb-4">
+                    <label for="date" class="mb-2 font-semibold">Data:</label>
+                    <input id="date" type="date" min="1" 
+                    class="p-2 rounded border border-gray-300"/>                        
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="time" class="mb-2 font-semibold">Hora:</label>
+                    <input type="time" id="time" name="Hora" required />
+                    <small>O escritório fica aberto das 08:00 até 18:00;</small>
+                    <small>O tempo médio de consulta e de 1 hora;</small>
+                </div>
+                <div class="flex flex-col mb-4">
                     <label for="service" class="mb-2 font-semibold">Tipo de Serviço:</label>
                     <select id="service" name="service" required
                         class="p-2 py-3 rounded border border-gray-300 bg-white">

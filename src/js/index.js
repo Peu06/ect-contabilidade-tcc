@@ -1,3 +1,4 @@
+window.onload=initDate
 src = "https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.9.27/libphonenumber-js.min.js"
 integrity = "sha512-vtUwo6oyxRLTy6V1nNKoOHdFY9LX6AnrGbG0KfiGZ8WTZC0eT2v8fJKjBGGxYySBZc4DLb84u7Euq6uqCnacLg=="
 crossorigin = "anonymous"
@@ -40,11 +41,13 @@ document.getElementById('agendamentoForm').addEventListener('submit', function (
     const email = document.getElementById('email').value;
     const descricao = document.getElementById('service').value;
     const telefone = document.getElementById('telefone').value;
+    const dateInput = document.getElementById('date');
+    const time = document.getElementById('time');
     const mensagem = document.getElementById('message').value;
 
     console.log({ nome, email, descricao, telefone }); // Verifique se todos os valores estão corretos
 
-    const data = { nome, descricao, telefone, email, mensagem };
+    const info = { nome, descricao, telefone, email, data, mensagem };
 
     fetch('https://ect-contabilidae-email.onrender.com/agendamentos', {
         method: 'POST',
@@ -68,3 +71,9 @@ document.getElementById('agendamentoForm').addEventListener('submit', function (
             console.error('Error:', error);
         });
 });
+
+function initDate (){
+    const today = new Date().toISOString().split('T')[0]
+    document.getElementById("date").setAttribute("min",today)
+}
+
